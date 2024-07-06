@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           className="flex cursor-pointer lg:hidden mx-3 items-center font-bold text-center w-full mb-10 text-slate-400"
         >
           <IoClose className="text-4xl" />
-          <h1 className="text-xl">Cerrar</h1>
+          <h1 className="text-base font-normal">Cerrar</h1>
         </div>
         <div className="flex items-center justify-center w-full gap-4">
           <img
@@ -50,14 +50,14 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           <li className="active category cursor-pointer" onClick={toogleClass}>
             <Link to="/" className="flex items-center gap-2">
               <IoGameController className="text-2xl lg:text-2xl" />
-              <h2 className="text-xl">Juegos</h2>
+              <h2 className="text-xl lg:text-lg">Juegos</h2>
             </Link>
           </li>
 
           <li className="cursor-pointer category" onClick={toogleClass}>
             <Link to="/" className="flex items-center gap-2">
               <IoWarning className="text-2xl lg:text-2xl" />
-              <h2 className="text-xl">Juegos +18</h2>
+              <h2 className="text-xl lg:text-lg">Juegos +18</h2>
             </Link>
           </li>
 
@@ -69,7 +69,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               rel="noreferrer"
             >
               <IoHeart className="text-2xl lg:text-2xl" />
-              <h2 className='text-xl'>Donar</h2>
+              <h2 className='text-xl lg:text-lg'>Donar</h2>
             </a>
           </li>
         </ul>

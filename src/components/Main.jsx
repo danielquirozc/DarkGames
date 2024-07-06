@@ -8,7 +8,7 @@ const Main = ({ toggleSidebar }) => {
   const { category } = useContext(CategoryContext)
   return (
     <main className="font-inter p-3 lg:p-7 w-full overflow-y-scroll h-screen">
-      <header className="flex items-center gap-2 h-16 lg:h-12 w-full">
+      <header className="flex items-center gap-2 h-12 lg:h-12 w-full">
         <button onClick={toggleSidebar} className='flex lg:hidden justify-center items-center text-xl w-[15%] text-slate-300 bg-zinc-700/75 h-full px-2 rounded-md'><IoMenu className='text-3xl'/></button>
         <Form />
         <a
