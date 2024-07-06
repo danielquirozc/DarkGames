@@ -25,11 +25,11 @@ const Main = ({ toggleSidebar }) => {
           src="./banner.png"
           alt="Banner de Dark Games"
         />
-        <h1 className="text-5xl lg:text-4xl font-bold text-slate-100">
+        <h1 className="text-4xl lg:text-4xl font-bold text-slate-100">
           <span className="text-red-500">Dark</span>Games
         </h1>
       </section>
-      <h1 className="ml-10 text-5xl lg:text-4xl font-bold text-slate-100 my-5">
+      <h1 className="ml-5 text-3xl lg:text-4xl font-bold text-slate-100 my-5">
         {category === 'Normal' ? 'Juegos' : 'Juegos +18'}
       </h1>
       <ListOfGames />

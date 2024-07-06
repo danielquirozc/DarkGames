@@ -21,11 +21,11 @@ const GamePage = () => {
     <div className="h-screen text-slate-200 overflow-y-scroll mt-5 px-4 text-2xl font-inter w-full">
       {game && (
         <>
-          <div className="sm:flex justify-start">
+          <div className="lg:flex justify-start">
             <Link
               to={'..'}
-              className="bg-zinc-800 lg:hidden w-16 rounded-md place-content-center">
-              <IoChevronBackOutline className="text-4xl w-full text-slate-500" />
+              className="bg-zinc-200 lg:hidden w-16 rounded-md place-content-center">
+              <IoChevronBackOutline className="text-4xl my-3 text-slate-500" />
             </Link>
             <img
               className="rounded w-24 mx-2 h-24"
@@ -53,19 +53,19 @@ const GamePage = () => {
           <div className="flex flex-wrap lg:flex-nowrap justify-center my-5 gap-5 w-full">
             <Slider images={game.images.slice(1)} />
             <div className="flex flex-col">
-              <h1 className="text-slate-300 text-4xl lg:text-2xl text-center font-bold">
+              <h1 className="text-slate-300 text-2xl lg:text-2xl text-center font-bold">
                 Descripción:
               </h1>
-              <p className="text-slate-400 text-balance text-3xl lg:text-base">
+              <p className="text-slate-400 text-balance text-xl lg:text-base">
                 {game.description}
               </p>
               <div className="my-10 gap-2 flex justify-center flex-col">
-                <h1 className="text-slate-300 text-center text-4xl lg:text-2xl font-bold">
+                <h1 className="text-slate-300 text-center text-2xl lg:text-2xl font-bold">
                   Links De Descargas:
                 </h1>
                 {game.links.map((link, index) => (
                   <a
-                    className="text-slate-300 text-center py-4 text-3xl lg:text-lg lg:py-1 px-3 rounded font-semibold bg-red-500 mx-2"
+                    className="text-slate-300 text-center py-2 text-xl lg:text-lg lg:py-1 px-3 rounded font-semibold bg-red-500 mx-2"
                     href={link.url}
                     key={index}
                     target="_blank"

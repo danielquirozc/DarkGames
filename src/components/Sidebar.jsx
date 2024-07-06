@@ -22,9 +22,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <section
       style={{ left: isOpen ? '0px' : '-100%' }}
-      className="h-dvh bg-zinc-700/50 left-10 lg:left-0 lg:rounded-none z-10 fixed lg:relative duration-300 overflow-hidden min-w-[110px] group flex flex-col justify-center w-full lg:w-1/5 font-inter"
+      className="h-dvh left-10 lg:left-0 lg:rounded-none z-10 fixed lg:relative duration-300 overflow-hidden min-w-[110px] group flex flex-col justify-center w-full lg:w-1/5 font-inter"
     >
-      <div className="relative ml-10 w-1/2 lg:w-full rounded-3xl pt-5 bg-zinc-900/95 backdrop-blur-sm lg:border-r lg:border-zinc-700 h-[90dvh] lg:bg-zinc-900 lg:h-dvh lg:rounded-none lg:ml-0">
+      <div className="relative ml-5 w-[70%] lg:w-full rounded-3xl pt-5 bg-zinc-900/95 backdrop-blur-sm lg:border-r lg:border-zinc-700 h-[90dvh] lg:bg-zinc-900 lg:h-dvh lg:rounded-none lg:ml-0">
         <div
           onClick={toggleSidebar}
           className="flex cursor-pointer lg:hidden mx-3 items-center font-bold text-center w-full mb-10 text-slate-400"
@@ -49,15 +49,15 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         >
           <li className="active category cursor-pointer" onClick={toogleClass}>
             <Link to="/" className="flex items-center gap-2">
-              <IoGameController className="text-5xl lg:text-2xl" />
-              <h2 className="block">Juegos</h2>
+              <IoGameController className="text-2xl lg:text-2xl" />
+              <h2 className="text-xl">Juegos</h2>
             </Link>
           </li>
 
           <li className="cursor-pointer category" onClick={toogleClass}>
             <Link to="/" className="flex items-center gap-2">
-              <IoWarning className="text-5xl lg:text-2xl" />
-              <h2 className="block">Juegos +18</h2>
+              <IoWarning className="text-2xl lg:text-2xl" />
+              <h2 className="text-xl">Juegos +18</h2>
             </Link>
           </li>
 
@@ -68,13 +68,13 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               target="_blank"
               rel="noreferrer"
             >
-              <IoHeart className="text-5xl lg:text-2xl" />
-              <h2>Donar</h2>
+              <IoHeart className="text-2xl lg:text-2xl" />
+              <h2 className='text-xl'>Donar</h2>
             </a>
           </li>
         </ul>
         <footer className="flex w-full absolute bottom-10 flex-col items-center text-center mt-16 text-zinc-500 font-medium">
-          <h4 className="text-2xl lg:text-sm">
+          <h4 className="text-xl lg:text-sm">
             © {new Date().getFullYear()} Dark Games
           </h4>
           <p className="text-xs text-balance hidden lg:block">
