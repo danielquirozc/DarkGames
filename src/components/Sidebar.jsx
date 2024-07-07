@@ -63,7 +63,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
           <li className="cursor-pointer">
             <a
-              href="https://www.paypal.com/paypalme/darkgames6"
+              href="https://www.paypal.com/paypalme/DarkGamesOF"
               className="flex items-center gap-2"
               target="_blank"
               rel="noreferrer"
