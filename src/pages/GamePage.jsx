@@ -18,7 +18,7 @@ const GamePage = () => {
   }, [])
 
   return (
-    <div className="h-screen text-slate-200 overflow-y-scroll mt-5 px-4 text-2xl font-inter w-full">
+    <div className="h-dvh text-slate-200 overflow-y-scroll mt-5 px-4 text-2xl font-inter w-full">
       {game && (
         <>
           <div className="lg:flex justify-start">
