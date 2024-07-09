@@ -44,7 +44,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </h1>
         </div>
         <ul
-          className="flex flex-col mx-3 items-center mt-16 text-zinc-500 *:cursor-pointer
+          className="flex flex-col mx-3 items-center mt-16 text-zinc-400/85 *:cursor-pointer
          *:rounded-md *:text-3xl lg:*:text-lg *:font-medium gap-3 *:flex *:flex-row lg:*:w-[60%] *:select-none"
         >
           <li className="active category cursor-pointer" onClick={toogleClass}>
@@ -73,10 +73,10 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </a>
           </li>
         </ul>
-        <footer className="flex w-full absolute bottom-10 flex-col items-center text-center mt-16 text-zinc-500 font-medium">
-          <h4 className="text-xl lg:text-sm">
+        <footer className="flex w-full absolute bottom-10 flex-col items-center text-center mt-16 text-zinc-400/85 font-medium">
+          <h3 className="text-xl lg:text-sm">
             © {new Date().getFullYear()} Dark Games
-          </h4>
+          </h3>
           <p className="text-xs text-balance hidden lg:block">
             Ningún archivo de descarga se encuentra alojado en nuestros
             servidores.
